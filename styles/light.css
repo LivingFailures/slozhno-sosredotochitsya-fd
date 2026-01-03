@@ -1,5 +1,6 @@
 :root.theme-light {
   --accent-color: #353430;
+  --font-size-header-footer: 116px;
   --transparent-accent: #32312d66;
   --text-color: #353430;
   --text-color-txt: #353430;
@@ -11,8 +12,9 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-auto {
+  :root {
     --accent-color: #353430;
+    --font-size-header-footer: 116px;
     --decor-color: #ff8dcb;
     --text-color: #353430;
     --transparent-accent: #32312d66;

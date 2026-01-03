@@ -1,5 +1,6 @@
 :root.theme-dark {
   --accent-color: #ff0070;
+  --font-size-header-footer: 116px;
   --decor-color: #ff0070;
   --text-color: #f1b2ce;
   --header-footer-color: #db00ff;
@@ -11,9 +12,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.theme-auto {
+  :root {
     --bg-color: #000028;
     --transparent-accent: #ff007066;
+    --font-size-header-footer: 116px;
     --decor-color: #ff0070;
     --text-color: #f1b2ce;
     --accent-color: #ff0070;
