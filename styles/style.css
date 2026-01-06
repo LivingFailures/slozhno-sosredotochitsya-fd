@@ -124,6 +124,7 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size);
   line-height: 23.4px;
+  padding-block-end: 23px;
 }
 
 .title-decor {
@@ -226,7 +227,7 @@
   font-size: var(--font-size);
   line-height: 23.4px;
   font-weight: var(--font-weight-bold);
-  margin-block-start: 50px;
+  margin-block-start: 36px;
 }
 
 .gallery__img {
