@@ -69,6 +69,7 @@
 }
 
 .header__theme-menu-button_active {
+  outline: 1px solid var(--transparent-accent);
   background: transparent;
   color: var(--accent-color);
   outline-offset: -1px;
@@ -319,7 +320,7 @@
   }
 
   .section-subtitle_mod {
-    margin-block-start: 9px;
+    margin-block-start: 20px;
     margin-inline: 0;
   }
 
@@ -463,6 +464,7 @@
   .header-title.title-decor {
     max-width: 491px;
     margin-block-end: 135px;
+    padding-block-end: 0;
   }
 
   .decorated-zone::before {
