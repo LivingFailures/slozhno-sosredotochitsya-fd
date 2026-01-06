@@ -1,18 +1,9 @@
 :root {
-  --font-size-header-footer: 116px;
-  --accent-color: #ff0070;
-  --transparent-accent: #ff007066;
-  --transparent-accent: #32312d66;
-  --decor-color: #ff8dcb;
-  --decor-color: #ff0070;
-  --text-color: #f1b2ce;
-  --title-shadow-color: #ff8dcb;
-  --title-shadow-color: #ff0070;
-  --header-footer-color: #db00ff;
+  --font-size-title-large: 116px;
+  --font-size-title-gigantic: 157px;
   --font-text: "IBM Plex Mono";
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --cover-image: url("/images/cover-image-dark.png");
   --bg-color: #000028;
   --font-size: 18px;
 }
