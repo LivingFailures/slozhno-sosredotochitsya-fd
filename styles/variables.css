@@ -1,6 +1,6 @@
 :root {
-  --font-size-title-large: 116px;
-  --font-size-title-gigantic: 157px;
+  --font-size-title-large: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-title-gigantic: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --font-text: "IBM Plex Mono";
   --font-weight-regular: 400;
   --font-weight-bold: 700;

@@ -1,7 +1,7 @@
 :root.theme-light {
   --accent-color: #353430;
-  --font-size-title-large: 116px;
-  --transparent-accent: #32312d66;
+  --font-size-title-large: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --transparent-accent: rgba(50, 49, 45, 0.4);
   --text-color: #353430;
   --text-color-txt: #353430;
   --title-color: #ffc2e6;
@@ -10,28 +10,24 @@
   --decor-color: #ff8dcb;
   --cover-image: url("../images/cover-image-light.png");
   --font-text: "IBM Plex Mono";
-  --font-size-title-gigantic: 157px;
-}
-
-.theme-light .rec-label {
-  display: none;
+  --font-size-title-gigantic: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #353430;
-    --font-size-title-large: 116px;
+    --font-size-title-large: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --decor-color: #ff8dcb;
     --text-color: #353430;
-    --transparent-accent: #32312d66;
+    --transparent-accent: rgba(50, 49, 45, 0.4);
     --title-color: #ffc2e6;
     --bg-color: #fff1f7;
     --title-shadow-color: #ff8dcb;
     --cover-image: url("../images/cover-image-light.png");
     --font-text: "IBM Plex Mono";
-    --font-size-title-gigantic: 157px;
+    --font-size-title-gigantic: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-  .rec-label {
+  .theme-auto .rec-label {
     display: none;
   }
 }
