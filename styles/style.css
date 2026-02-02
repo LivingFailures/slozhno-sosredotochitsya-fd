@@ -24,7 +24,7 @@
 }
 
 .rec-label {
-  display: flex;
+  display: var(--rec-label-display);
   position: absolute;
   justify-self: end;
   font-family: var(--font-text), monospace;
@@ -129,7 +129,7 @@
   font-family: var(--font-text), monospace;
   font-size: var(--font-size);
   font-weight: var(--font-weight-bold);
-  color: #000028;
+  color: var(--title-color-smaller);
 }
 
 .title-large {
@@ -141,30 +141,17 @@
   text-shadow: 4px 4px 0 var(--title-shadow-color);
 }
 
-.section {
-  color: #fff;
-}
-
 .section-title {
   font-family: var(--font-text), monospace;
   font-weight: var(--font-weight-bold);
   color: var(--accent-color);
   font-size: var(--font-size);
+  padding-inline: 10px;
+  padding-block-start: 52px;
 }
 
 .section-title-reasons {
   padding-block-start: 40px;
-  padding-inline: 10px;
-}
-
-.section-title-factors {
-  padding-block-start: 52px;
-  padding-inline: 10px;
-}
-
-.section-title-advice {
-  padding-block-start: 52px;
-  padding-inline: 10px;
 }
 
 .card {
@@ -209,7 +196,7 @@
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 10px 10px 40px;
+  padding: 14px 10px 40px;
   gap: 10px;
 }
 
@@ -285,11 +272,14 @@
     padding: 10px 20px;
   }
 
+  .section {
+    padding-inline: 20px;
+  }
+
   .section-reasons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding-inline: 20px;
     padding-block-start: 40px;
   }
 
@@ -299,12 +289,10 @@
   }
 
   .section-advice-list {
-    display: grid;
     grid-column: 2;
   }
 
   .section-subtitle_mod {
-    height: 23px;
     margin-inline: 0;
   }
 
@@ -312,8 +300,11 @@
     min-width: 472px;
   }
 
-  .section-reasons-list {
+  .section-list-grid {
     display: grid;
+  }
+
+  .section-reasons-list {
     grid-column: 2 / 3;
   }
 
@@ -323,24 +314,24 @@
 
   .section-factors {
     padding-block-start: 30px;
-    padding-inline: 20px;
+  }
+
+  .section-title_padding {
+    padding-inline: 0;
   }
 
   .section-title-reasons {
     display: grid;
     max-width: 236px;
     padding-block-start: 20px;
-    padding-inline: 0;
   }
 
   .section-title-factors {
     max-width: 236px;
-    padding-inline: 0;
   }
 
   .section-title-advice {
     padding-block-start: 23px;
-    padding-inline: 0;
   }
 
   .section-subtitle {
@@ -356,7 +347,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-block-start: 60px;
-    padding-inline: 20px;
   }
 
   .gallery__title {
@@ -368,7 +358,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 20px;
-    padding: 29px 20px 60px;
+    padding: 35px 20px 60px;
   }
 
   .gallery__img:nth-child(1) {
@@ -440,10 +430,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section-title {
-    grid-column: 1;
-  }
-
   .section-title-reasons {
     max-width: 100%;
   }
@@ -456,8 +442,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    padding-inline-start: 20px;
-    padding-inline-end: 19px;
   }
 
   .section-title-factors {
@@ -465,7 +449,6 @@
   }
 
   .section-factors-list {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     grid-column: 1 / 4;
@@ -480,11 +463,15 @@
     max-width: 315px;
   }
 
+  .gallery {
+    padding: 30px 20px 60px;
+  }
+
   .gallery__title {
     margin-block-start: 52px;
   }
 
   .footer_name {
-    font-size: 157px;
+    font-size: var(--font-size-title-gigantic);
   }
 }

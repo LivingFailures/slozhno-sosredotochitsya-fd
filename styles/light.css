@@ -1,33 +1,26 @@
 :root.theme-light {
   --accent-color: #353430;
-  --font-size-title-large: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --transparent-accent: rgba(50, 49, 45, 0.4);
+  --title-color-smaller: #353430;
   --text-color: #353430;
   --text-color-txt: #353430;
   --title-color: #ffc2e6;
-  --bg-color: #fff1f7;
   --title-shadow-color: #ff8dcb;
   --decor-color: #ff8dcb;
   --cover-image: url("../images/cover-image-light.png");
-  --font-text: "IBM Plex Mono";
-  --font-size-title-gigantic: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --rec-label-display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #353430;
-    --font-size-title-large: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --title-color-smaller: #353430;
     --decor-color: #ff8dcb;
     --text-color: #353430;
     --transparent-accent: rgba(50, 49, 45, 0.4);
     --title-color: #ffc2e6;
-    --bg-color: #fff1f7;
     --title-shadow-color: #ff8dcb;
     --cover-image: url("../images/cover-image-light.png");
-    --font-text: "IBM Plex Mono";
-    --font-size-title-gigantic: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-  .theme-auto .rec-label {
-    display: none;
+    --rec-label-display: none;
   }
 }
