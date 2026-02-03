@@ -182,11 +182,19 @@
 }
 
 .link-decor {
+  position: relative;
+  text-decoration: none;
   text-shadow: 2px 2px 0 var(--decor-color);
 }
 
-.link-decor:hover {
-  border-block-end: 1px solid var(--text-color);
+.link-decor:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--text-color);
 }
 
 .link-decor:focus-visible {
